@@ -1,0 +1,17 @@
+# GigPulse (Android, Kotlin + Compose)
+
+UberEats-style companion for Dashers & Uber Eats drivers:
+- Earnings by platform (DoorDash / UberEats)
+- Expenses (Gas etc.) and Net
+- Mileage tracker (Foreground Service)
+- Hotspot tracker (periodic) + local notifications when "red"
+- Optional Notification Listener: marks platform busy when device gets "surge/peak pay/dash now" alerts
+
+## Build (GitHub Actions, no wrapper needed)
+This repo includes a workflow that installs Gradle and Android SDK and builds a debug APK artifact.
+
+## Local permissions
+- Location (foreground) for mileage
+- Post notifications
+- (Optional) Background location for long tracking sessions
+- Notification access (optional) for reading other apps' busy alerts

@@ -1,0 +1,3 @@
+-keep class androidx.compose.** { *; }
+-keep class kotlin.** { *; }
+-keep class androidx.room.** { *; }
